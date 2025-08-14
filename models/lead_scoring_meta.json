@@ -1,0 +1,55 @@
+{
+  "created_at": "20250814-174851",
+  "pipeline_path": "models/lead_scoring_pipeline_20250814-174851.joblib",
+  "features": {
+    "num": [
+      "RevenueUSD_log",
+      "Employees_log",
+      "CompanyAge",
+      "YearFounded",
+      "RevenueUSD",
+      "EmployeesCount"
+    ],
+    "bin": [
+      "HasOwnerEmail",
+      "HasOwnerPhone",
+      "HasOwnerLinkedin"
+    ],
+    "cat": [
+      "Industry",
+      "BusinessModel",
+      "State"
+    ]
+  },
+  "bb_map": {
+    "A+": 6,
+    "A": 5,
+    "A-": 4,
+    "B+": 3,
+    "B": 2,
+    "B-": 1
+  },
+  "metrics": {
+    "roc_auc": 0.6863187099011617,
+    "pr_auc": 0.526905619867006
+  },
+  "bucket_rule": {
+    "bins": [
+      -1,
+      60,
+      80,
+      100
+    ],
+    "labels": [
+      "C",
+      "B",
+      "A"
+    ]
+  },
+  "versions": {
+    "python": "builtins",
+    "sklearn": "1.7.1",
+    "pandas": "2.3.1",
+    "numpy": "2.2.6"
+  }
+}
