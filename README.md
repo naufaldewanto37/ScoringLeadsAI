@@ -54,8 +54,6 @@ Notes:
 ```bash
 python >= 3.10
 pip install -U pandas numpy scikit-learn matplotlib seaborn joblib shap
-# optional
-pip install -U xgboost lightgbm
 ```
 
 ---
