@@ -11,7 +11,7 @@ It covers data prep, feature engineering, modeling, evaluation (ROC‑AUC, PR‑
 ## TL;DR
 - Input: CSV of company/owner attributes (US sample).  
 - Output: probability to convert (`Converted_Prob`), 0–100 **LeadScore**, and **bucket** (A/B/C).  
-- Stack: `pandas`, `scikit‑learn` (`Pipeline`, `ColumnTransformer`), optional `xgboost/lightgbm`.
+- Stack: `pandas`, `scikit‑learn` (`Pipeline`, `ColumnTransformer`).
 
 ---
 
@@ -40,9 +40,7 @@ Notes:
 ```
 .
 ├─ Lead Scoring.ipynb          # Main notebook: EDA → features → train → evaluate → score
-├─ data/
-│  ├─ b2b_leads.csv            # Sample dataset (labeled)
-│  └─ b2b_leads_new.csv        # (optional) Newer sample
+├─ b2b_leads_new.csv           # Sample dataset (labeled)
 ├─ models/                      # (created at runtime) saved pipelines
 └─ README.md
 ```
