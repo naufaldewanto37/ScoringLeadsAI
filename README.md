@@ -64,7 +64,7 @@ pip install -U pandas numpy scikit-learn matplotlib seaborn joblib shap
    - **Features**: log transforms (`RevenueUSD_log`, `Employees_log`), `CompanyAge`,
      presence flags (`HasOwnerEmail`, `HasOwnerPhone`, `HasOwnerLinkedin`, `HasAnyContact`, `ContactCount`),
      BBB ordinal mapping, one‑hot for `Industry/BusinessModel/State`.
-   - **Model**: `Pipeline(preprocess) + (LogReg | GradientBoosting | XGBoost/LGBM)`
+   - **Model**: `Pipeline(preprocess) + (LogReg)`
    - **Evaluate**: ROC‑AUC, PR‑AUC, **Precision@K** (Top‑K), **Calibration** & **Brier score**
    - **Export**: persisted `joblib` pipeline + scored outputs
 
